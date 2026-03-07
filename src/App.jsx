@@ -1,27 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-
+import { ContactForm } from './ContactForm.jsx'
+import { UserProfile } from './UserProfile.jsx'
+function ButtonPress() {
+  return (
+    <button>Click me</button>
+  )
+}
+function Bonjour() {
+  return (
+    <div>
+      <h1>Bonjour</h1>
+    </div>
+  )
+}
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
-    <>
-      
+    <div >
+      <ContactForm />
+      <UserProfile />
+      <Bonjour />
       <h1>MOHAMED CHARFI</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+      <ButtonPress />
+    </div>
   )
 }
 
