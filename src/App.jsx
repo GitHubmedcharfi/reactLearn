@@ -17,9 +17,10 @@ function App() {
 
 
   return (
-    <div >
+    <div>
+      <UserProfile name="Mohamed Charfi" isOnline={true} />
+      <UserProfile name="MohamedCharfi" isOnline={false} />
       <ContactForm />
-      <UserProfile />
       <Bonjour />
       <h1>MOHAMED CHARFI</h1>
       <ButtonPress />
