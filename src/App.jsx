@@ -1,6 +1,7 @@
 import './App.css'
 import { ContactForm } from './ContactForm.jsx'
 import { ProductList } from './ProductList.jsx'
+import { TodoList } from './TodoList.jsx'
 import { UserProfile } from './UserProfile.jsx'
 function ButtonPress() {
   return (
@@ -19,11 +20,7 @@ function App() {
 
   return (
     <div>
-      <ProductList />
-      <UserProfile name="Mohamed Charfi" isOnline={true} />
-      <UserProfile name="MohamedCharfi" isOnline={false} />
-      <ContactForm />
-      <Bonjour />
+      <TodoList />
       <h1>MOHAMED CHARFI</h1>
       <ButtonPress />
     </div>
